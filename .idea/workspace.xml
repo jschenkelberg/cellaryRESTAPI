@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="780dd3be-dec0-4a7c-b92b-31528a599360" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/pantry/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/pantry/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/pantry/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/pantry/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/capstone/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
