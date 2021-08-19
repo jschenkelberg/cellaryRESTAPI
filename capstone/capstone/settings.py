@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'pantrymanager.apps.PantryManagerConfig',
+    'pantry.apps.PantryConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,12 +74,7 @@ WSGI_APPLICATION = 'capstone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+
 
 
 # Password validation
@@ -124,4 +119,3 @@ try:
     from capstone.local_settings import *
 except ImportError:
     pass
-
