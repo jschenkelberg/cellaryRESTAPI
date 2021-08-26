@@ -55,3 +55,29 @@ class FoodDetails(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class AlertToggle(APIView):
+    
+    def get_object(self, pk):
+        try:
+            return Food.objects.get(pk=pk)
+        except Food.DoesNotExist:
+            raise Http404
+
+    def patch(self, request, pk):
+        food = self.get_object(pk)
+        serializer = FoodSerializer(food, data=request.data, partial=True)
+        if serializer.is_valid():
+            food.alert = True
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, pk):
+        food = self.get_object(pk)
+        serializer = FoodSerializer(food, data=request.data, partial=True)
+        if serializer.is_valid():
+            food.alert = False
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
